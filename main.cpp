@@ -218,6 +218,6 @@ int main()
 
     copiere(v, v1);
     cout<<"Radix sort"<<endl;
-    durata(radix_sort, v); //afisare(v);
+    durata(radix_sort, v);
     cout<<"---------------------------------------"<<endl;}
 return 0;}
