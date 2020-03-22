@@ -76,7 +76,7 @@ void quick_sort(vector <unsigned int> &v, int start, int fin)
             quick_sort(v, pi+1, fin);
         }
 }
-vector <unsigned int> concatenare(vector<unsigned int> left, vector <unsigned int> right)
+vector <unsigned int> interclasare(vector<unsigned int> left, vector <unsigned int> right)
 {
     vector <unsigned int> rez;
     while ( (int)left.size()!=0 || (int)right.size()!=0)
@@ -116,7 +116,7 @@ vector <unsigned int> merge_sort(vector <unsigned int> v)
 
     left=merge_sort(left);
     right=merge_sort(right);
-    rez=concatenare(left, right);
+    rez=interclasare(left, right);
 
     return rez;
 }
@@ -191,7 +191,7 @@ int main()
 
     copiere(v1, v);
 
-    cout<<"Bubble sort:"<<endl; durata(bubble_sort, v);//afisare(v);cout<<endl;
+    cout<<"Bubble sort:"<<endl; durata(bubble_sort, v);
 
     copiere(v, v1);
 
